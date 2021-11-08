@@ -88,4 +88,4 @@ jobs:
     needs: [ unit-test ]
     runs-on: ubuntu-latest
     steps:
-    - run: "Deploy to production."
+    - run: echo "Deploy to production."

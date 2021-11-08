@@ -21,7 +21,7 @@ jobs:
   pre-build2:
     env:
       JOB_ENVIRONMENT_VARIABLE: 'custom job environment variable for ubuntu'
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
     - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
     - run: echo "${{ secrets.PASSWORD }}"    

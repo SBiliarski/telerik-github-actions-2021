@@ -121,7 +121,7 @@ jobs:
           POSTGRES_HOST: postgres
           POSTGRES_PORT: 5432
   deploy:
-    needs: [ database-integration ]
+    needs: [ database-integration, SAST ]
     runs-on: ubuntu-latest
     steps:
     - run: echo "Deploy to production!"
